@@ -55,18 +55,35 @@
             direitos reservados a sua HIHI
         </p>
         <section id="contatos">
-            <h2>Comtatos</h2>
+            <h2>Contatos</h2>
             <p>
                 caso queira fingir a propria morte entre em contato
             </p>
-            <address>
-                gmail: <a
-                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqIKIKuPmLqi3h_MXlWx3MipQU4La9JTVvg&s"
-                    target="_blank">michael.jackson69@gmail.com</a><!--redirecionamento--><br><!--pula para a proxima linha--><!--(o target="_blank" abre o link em um novo guia)-->
-                telefone: <a
-                    href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Michaeljacksonmug1_%28high_quality%29.jpg/250px-Michaeljacksonmug1_%28high_quality%29.jpg"
-                    target="_blank">48 98429-4022</a>
-            </address>
+            <form action=""><!--formulario-->
+                <label for="nome">Nome: </label><!--espaço de digitaçao/açao-->
+                <input type="text" id="nome" name="nome" required><br><!--o "required" torna a informaçao obrigatoria-->
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="tell">Telefone: </label>
+                <input type="tel" id="tell" name="tell"><br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto"><!--cria um espaço de seleçao de itens-->
+                    <option value="orçamento">Orçamento</option><!--opçoes de seleçao-->
+                    <option value="duvidas">Dúvidas</option>
+                    <option value="outros">Outros</option>
+                </select><br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="3" required></textarea><br>
+
+                <input type="checkbox" name="incricao" id="incricao">
+                <label for="incricao">Deseja receber minha newsLetter? entao marque a caixinha</label><br>
+
+                <input type="submit" value="Enviar mensagem">
+            </form>
         </section>
     </footer>
 </body>
