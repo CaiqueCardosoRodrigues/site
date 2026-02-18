@@ -10,9 +10,9 @@
 <body>
     <header> <!--cabeçario-->
         <h1>auto biografia</h1><!--escreve um texto na tela(titulo)-->
-        <nav> <!--area de navwgaçao do site-->
+        <nav> <!--area de navwgaçao em texto do site-->
             <ul><!--lista nao ordenada para link do menu(Topicos)-->
-                <li><a href="#sobre_mim">Sobre eu</a></li><!--listamento-->
+                <li><a href="#sobre_mim">Sobre eu</a></li><!--itens da lista-->
                 <li><a href="#projetos">projetos</a></li>
                 <li><a href="#contatos">meios de contatos</a></li>
             </ul>
@@ -24,7 +24,7 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJN6NErQM0FSCe27Jgy2empYHQ43-mz-hbA&s"
             alt="AU!"
             title="I am Michael Jackson"><!--adiciona uma imagem(src = link pra imagem)(alt = caso a imagem nao carrege apresenta um texto)(title = adiciona um texto ao passsar com o cursor por cima da imagem)-->
-        <article><!--artigo-->
+        <article><!--artigo(texto independente)-->
             <p>
                 hihi
             </p><!--paragrafo-->
@@ -36,7 +36,7 @@
                 <li>Java</li>
                 <li>C++</li>
                 <li>HTML</li>
-                <li>JavaCript(futuramente)</li>
+                <li>JavaScript(futuramente)</li>
                 <li>Python(futuramente)</li>
             </ul>
         </aside>
@@ -52,7 +52,7 @@
         </article>
     </section>
 
-    <section id="habilidades e Tecnologias">
+    <section id="habilidades_Tecnologias">
         <h2>Hbilidades</h2>
         <table><!--tabela-->
             <thead><!--cabeçario-->
@@ -130,7 +130,7 @@
                 </select><br>
 
                 <label for="mensagem">Mensagem: </label>
-                <textarea name="mensagem" id="mensagem" cols="20" rows="3" required></textarea><br>
+                <textarea name="mensagem" id="mensagem" cols="40" rows="5" maxlength="300" placeholder="Digite sua mensagem (máx. 300 caracteres)"></textarea><br><!--caixa de texto(cols = eixo x)(rows = eixo y)(maxlength = limita a quantidade de caracteries)(placeholder = apresenta um texto[some ao começar a digitar])-->
 
                 <input type="checkbox" name="incricao" id="incricao">
                 <label for="incricao">Deseja receber minha newsLetter? entao marque a caixinha</label><br>
@@ -140,5 +140,4 @@
         </section>
     </footer>
 </body>
-
 </html>
